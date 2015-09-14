@@ -87,9 +87,9 @@ def get_single_book_info(url):
             result.append(item)
     score = soup.find('strong', attrs={'class':'rating_num'})
     image = soup.find('div', attrs={'id':'mainpic'})
-    return dict(name=name, score=score.get_text().strip(),info=result,img=image.a['href'])
+    return dict(name=name, score=score.get_text().strip(),info=result,img=image.img['src'])
 
 
 if __name__ == '__main__':
-    get_info('机器学习')
+    get_info('数据挖掘')
     #print get_single_book_info('http://book.douban.com/subject/1102235/')
