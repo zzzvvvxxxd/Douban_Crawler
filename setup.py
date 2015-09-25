@@ -1,3 +1,5 @@
+# coding=utf-8
+__author__ = 'bulu_dog'
 from distutils.core import setup
 
 setup(

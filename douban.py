@@ -2,6 +2,7 @@
 # coding=utf-8
 __author__ = 'bulu_dog'
 
-import douban_util
+from douban_util.movie import search_for_movie_cat
 
-print 'aa'
+for item in search_for_movie_cat('星球大战'):
+    print item
